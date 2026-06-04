@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horários</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+             <ul>
+                <li><a href="med.html">Início</a></li>
+                <li><a href="horario.html">Horários</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+
+            <div class="header" style="display: flex;" >
+                
+                <div class="logo" style="padding: 7px;" >
+                    <a href="med.html"><img src="imagens/clinicalogo.png" alt="Logo da Clinica" width="120"></a>
+                </div>
+
+                <div style="width: 100%; padding: 8px;">
+                   <h1>Clinica Medicinal</h1>
+                </div>
+                <hr>
+             
+            </div>
+    
+            <div class="content">
+                <h1>Horários</h1>
+                    <p>Abaixo segue os horários disponiveis para marcação de consultas mediante o medico necessario.</p>
+
+                    <div style="display: flex;">
+                        <div>   
+                            <table summary="Horários de funcionamento da clínica" border="3" style="margin: 50px; width: 1000px;" cellspacing="2" cellpadding="5">
+                                    <caption>Horários de funcionamento da clínica</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Serviços</th>
+                                            <th>Segunda a Sexta</th>
+                                            <th>Sábados</th>
+                                            <th>Feriados</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>    
+                                        <tr >
+                                            <td>Clínica geral</td>
+                                            <td align="center">	08h - 19h</td>
+                                            <td align="center">	08h - 14h</td>
+                                            <td align="center">    08h - 14h</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Psicologia</td>
+                                            <td align="center">	08h - 19h</td>
+                                            <td align="center">	08h - 14h</td>
+                                            <td align="center">    08h - 14h</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Pediatria</td>
+                                            <td align="center">	08h - 19h</td>
+                                            <td align="center">	08h - 18h</td>
+                                            <td align="center">     - </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Oftalmologia</td>
+                                            <td align="center">	08h - 19h</td>
+                                            <td align="center">	08h - 18h</td>
+                                            <td align="center">     - </td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <td colspan="4" align="center">Decida o melhor horario</td>
+                                    </tfoot>
+                                </table>
+                            </div>  
+
+                            <div style="height: 50px; text-align: center;">
+                                    <p>Apos decidir o horario, segue abaixo um formulario que deverá ser preenchido para prosseguir com a marcação da consulta.</p>  
+                            </div>    
+                    </div>    
+                    
+                <div style="display: flex;">
+                        <div>
+                            <div>
+                            <fieldset style="width: 400px; margin: 50px; padding: 20px;">
+                                <legend>Dados do Paciente</legend>
+                                <form action="">
+                                    <label for="name">Nome:</label>
+                                    <input type="text" id="name">
+                                    <br>
+                                    <label for="age">Idade:</label>
+                                    <input type="number" id="age">
+                                    <br>
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email">
+                                    <br>
+                                    <label for="cpf">Cpf:</label>
+                                    <input type="text" id="cpf">
+                                    <br>
+                        
+                                    <label for="service">Serviço:</label>
+                                    <select id="service">
+                                        <option def value="selecione">Selecione o serviço</option>
+                                        <option value="clinica-geral">Clínica Geral</option>
+                                        <option value="psicologia">Psicologia</option>
+                                        <option value="pediatria">Pediatria</option>
+                                        <option value="oftalmologia">Oftalmologia</option>
+                                    </select>
+                                    <br>
+                                
+                                    <label for="time">Horário:</label>
+                                    <select id="serviço">
+                                        <option def value="selecione">Selecione o horário</option>
+                                    <option value="8 a 19">08h - 19h</option>
+                                    <option value="8 a 14">08h - 14h</option>
+                                    <option value="8 a 18">08h - 18h</option>
+                                    </select>
+                                    <br>
+                                <button type="submit">Enviar</button>
+                                <button type="reset">Limpar</button>  
+                                </div>            
+
+                            </form>
+                        </fieldset>                   
+                    </div> 
+
+                </div>  
+                    
+            </div>
+             
+
+    
+            <div class="footer" style="display: flex;">
+                
+                <div style="width: 50%;" >
+                    <h2>Contatos</h2>
+                    
+                        <ul>
+                            <li><label>Email: clinica@email.com.br </label></li>
+                            <li><label>Telefone: 95 9596-2194</label></li>
+                            <li><label>Instagram: @Clinica </label></li>
+                        </ul>
+                </div>
+
+                <div>
+                    <h2>Endereço</h2>
+                    <p>Canal do Norte</p>
+                    <p>Rua Cachimbo, 659</p>
+                    <p>2<sup>a</sup> entrada após Supermercado</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
